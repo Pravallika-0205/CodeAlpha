@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+    <main>
+        <section id="workout-log">
+            <h2>Workout Log</h2>
+            <table id="workout-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Exercise</th>
+                        <th>Duration</th>
+                        <th>Goal</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody id="workout-data">
+                    <!-- workout data will be rendered here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="goal-setting">
+            <h2>Set Fitness Goals</h2>
+            <form id="goal-form">
+                <label for="goal-exercise">Exercise:</label>
+                <input type="text" id="goal-exercise" name="exercise">
+                <label for="goal-duration">Duration:</label>
+                <input type="number" id="goal-duration" name="duration">
+                <label for="goal-goal">Goal:</label>
+                <input type="text" id="goal-goal" name="goal">
+                <button id="set-goal-btn">Set Goal</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
